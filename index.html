@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b910e3d46e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu indent">
+            <div class="header">
+                <nav class="nav">
+                    <a class="link" href="index.html">Home</a>
+                    <a class="link" href="products.html">Products</a>
+                    <a class="link" href="about.html">About</a>
+                </nav>
+                <i class="fa-brands fa-digg logo"></i>
+                <a href=""> <i id="bagBtn" class="fa-solid fa-cart-shopping cart"></i><span
+                        class="amountCart"></span></a>
+            </div>
+            <h2 class="title">Rest, Relax, Unwind</h2>
+            <p class="text">Embarce your choices - we do</p>
+            <button class="btn">Show now</button>
+        </div>
+        <div class="featured indent">
+            <h3 class="title-featured">Featured</h3>
+            <div class="products">
+
+            </div>
+            <div class="ref-all-products">
+                <a class="all-products" href="products.html">all products</a>
+            </div>
+        </div>
+        <div class="backDrop"></div>
+        <div class="bag">
+            <i id="close" class="fa-solid fa-xmark close "></i>
+            <h2 class="titleBag">Your Bag</h2>
+            <div id="productInBag"></div>
+
+            <div class="ref-all-products">
+                <a id="removeAll" href="#">Remove All</a>
+            </div>
+            <p class="titleBag total">Total: $<span id="total"></span></p>
+            <div class="ref-all-products">
+                <a class="all-products checkout" href="">checkout</a>
+            </div>
+        </div>
+        <script type="module" src="js/bag.js"></script>
+        <script type="module" src="js/home.js"></script>
+</body>
+
+</html>

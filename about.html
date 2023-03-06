@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b910e3d46e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>About</title>
+</head>
+
+<body>
+
+    <div class="container  container-about">
+        <div class="header header-about indent">
+            <nav class="nav">
+                <a class="link" href="index.html">Home</a>
+                <a class="link" href="products.html">Products</a>
+                <a class="link" href="about.html">About</a>
+            </nav>
+            <i class="fa-brands fa-digg logo cart"></i>
+            <a href=""> <i id="bagBtn" class="fa-solid fa-cart-shopping cart"></i><span class="amountCart"></span></a>
+        </div>
+        <div class="about">Home / About</div>
+
+        <h3 class="history">Our history</h3>
+        <div class="ref-all-products">
+            <p class="history-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia natus
+                earum odio,
+                explicabo aut, aliquam quidem temporibus ex mollitia cum laudantium beatae, possimus atque odit
+                harum!
+                Ipsa
+                tempora sit dolorum!</p>
+        </div>
+
+    </div>
+    <div class="backDrop"></div>
+    <div class="bag">
+        <i id="close" class="fa-solid fa-xmark close "></i>
+        <h2 class="titleBag">Your Bag</h2>
+        <div id="productInBag"></div>
+
+        <div class="ref-all-products">
+            <a id="removeAll" href="#">Remove All</a>
+        </div>
+        <p class="titleBag total">Total: $<span id="total"></span></p>
+        <div class="ref-all-products">
+            <a class="all-products checkout" href="">checkout</a>
+        </div>
+    </div>
+    <script type="module" src=" js/bag.js"></script>
+
+</body>
+
+</html>

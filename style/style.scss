@@ -1,0 +1,329 @@
+@import "var.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-bottom: 30px;
+    min-height: 100vh;
+}
+
+.indent {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.menu {
+    padding-top: 20px;
+    color: $color-blue;
+    background-image: url(/photo/img-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+    color: $color-blue;
+}
+
+.logo {
+    margin-left: -90px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.cart {
+    color: $color-blue;
+}
+
+.title {
+    margin-top: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.btn {
+    font-size: 10px;
+    color: $color-blue;
+    border: 1px solid $color-blue;
+    border-radius: 2px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.featured {
+    margin-top: 20px;
+}
+
+.title-featured {
+    text-align: center;
+    color: $color-blue;
+    letter-spacing: 3px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    color: $color-blue;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foto {
+    width: 150px;
+    height: 100px;
+    border: 1px solid rgb(166, 155, 155);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.price {
+    font-weight: bold;
+    color: rgb(6, 6, 72);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.all-products {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: rgb(162, 65, 30);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.ref-all-products {
+    display: flex;
+    justify-content: center;
+}
+
+//Page about
+.container-about {
+    padding-top: 20px;
+    color: rgb(10, 10, 57);
+}
+
+.header-about {
+    margin-bottom: 20px;
+}
+
+.about {
+    height: 70px;
+    background-color: rgb(243, 243, 248);
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    padding-left: 150px;
+}
+
+.history {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.history-text {
+    max-width: 300px;
+    font-size: 12px;
+    color: $color-blue;
+}
+
+//products
+.products {
+    display: flex;
+}
+
+.company {
+    padding-top: 30px;
+}
+
+.search {
+    border: none;
+    outline: none;
+    background-color: rgb(243, 243, 248);
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: $color-blue;
+    font-size: 12px;
+    max-width: 50px;
+    white-space: nowrap;
+}
+
+.products-list {
+    // flex-wrap: wrap;
+    // margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    //  grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+.filter {
+    display: none;
+}
+
+.bag {
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    border-left: 1px solid gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: right .5s linear;
+    overflow-y: scroll;
+}
+
+.productsInBag {
+    display: flex;
+    margin-top: 50px;
+}
+
+.titleBag {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: $color-blue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.productInBag {
+    margin-left: 10px;
+}
+
+.btnRemove {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 35px;
+    color: $color-blue;
+    position: absolute;
+}
+
+.btnRemove:hover {
+    color: red;
+    font-size: 18px;
+}
+
+.close {
+    color: blue;
+    cursor: pointer;
+    padding: 3px;
+    position: absolute;
+}
+
+:hover.close {
+    font-size: 18px;
+    color: rgb(231, 59, 59);
+}
+
+.amountInBag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: red;
+    cursor: pointer;
+
+}
+
+.amount {
+    text-align: center;
+    color: blue;
+}
+
+.checkout {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.prod {
+    flex: 1;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.total {
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+
+.backDrop {
+    background-color: rgb(105, 99, 99);
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.amountCart {
+    border-radius: 50%;
+    background-color: red;
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    top: 10px;
+}
+
+.bag.active {
+    right: 0;
+}
+
+.backDrop.active {
+    opacity: 0.5;
+    pointer-events: initial;
+}
